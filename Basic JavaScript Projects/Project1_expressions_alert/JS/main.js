@@ -1,10 +1,12 @@
+// Makes a pop up box that says "Hello, World!"
 var A = "Hello, World!"
-window.alert(A); //Makes a pop up box that says "Hello, World!"
+window.alert(A);
 
+// Writes out text utilizing the \ to add marks
 var X = "This string has an apostrophe (\') and quotation marks (\").";
-document.write(X); //Writes out text utilizing the \ to add marks
+document.write(X);
 
-document.write("<br>") //Inserts a line break
+document.write("<br>") // Inserts a line break
 
 document.write("\"We are living in a culture entirely hypnotized by the"
 + " illusion of time, in which the so-called present moment is felt as"
@@ -21,11 +23,14 @@ document.write("\"We are living in a culture entirely hypnotized by the"
 
 document.write("<br>")
 
-var B = "Concatenated" + " String" //+ concatenates two strings
-document.write(B)
+// Concatenating two strings using +
+var B = "Concatenated"
+var C = " String"
+document.write (B + C)
 
 document.write("<br>")
 
+// Assigning multiple variable in one statement
 var Family = "The Griffins", Dad = "Peter", Mom = "Lois",
     Daughter = "Meg", Son1 = "Chris", Son2 = "Stewie", Pet = "Brian";
 var Family = Family.fontcolor("green");
@@ -38,4 +43,12 @@ document.write(Dad);
 
 document.write("<br>")
 
-document.write(420+69) //An expression
+// An expression
+document.write(351+891)
+
+document.write("<br>")
+
+// JavaScript Event
+function displayDate() {
+    document.getElementById("time").innerHTML = Date();
+}
