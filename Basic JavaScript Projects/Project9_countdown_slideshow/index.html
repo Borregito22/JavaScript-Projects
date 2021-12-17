@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <script src="JS/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+
+        <!--Slideshow Container-->
+        <div class="slideshow-container">
+
+            <!--Full-Width Images With Number and Caption Text-->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="Images/thumbnail_1.jpg" style="width: 100%" alt="Nissan">
+                <div class="text">Silvia S15</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="Images/thumbnail_2.jpg" style="width: 100%" alt="Nissan">
+                <div class="text">Fairlady Z06</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Images/thumbnail_3.jpg" style="width: 100%" alt="BMW">
+                <div class="text">E30 M3</div>
+            </div>
+
+            <!--Next and Previous Buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <!--The Dots/Circles-->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+    </body>
+</html>
